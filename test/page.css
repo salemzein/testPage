@@ -1,0 +1,79 @@
+/* font google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,700&display=swap");
+
+:root {
+  --main-color: rgb(90, 245, 206);
+  --border-radius: 95% 4% 97% 5% /4% 95% 3% 95%;
+  --border-radius-hover: 4% 95% 6% 95% /95% 4% 92% 5%;
+  --border: 0.2rem solid var(--main-color);
+  --border-hover: 0.2rem dashed var(--main-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: 0;
+  border: 0;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 70%;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(45, 63, 63);
+  box-shadow: 7px 10px 15px rgb(189, 246, 250);
+  /* padding: 2rem 9%; */
+  padding: 25px 100px;
+  z-index: 1000;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 20px;
+}
+.header .logo:hover {
+  color: aquamarine;
+}
+
+.header i {
+  padding-left: 8px;
+}
+
+.header .navbar a {
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+  color: aliceblue;
+}
+.header .navbar a:hover {
+  color: aquamarine;
+}
+.btn {
+  color: aliceblue;
+  font-size: 13px;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  display: block;
+  margin-top: 5px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  border-radius: var(--border-radius-hover);
+  border: var(--border-hover);
+  color: aquamarine;
+}
